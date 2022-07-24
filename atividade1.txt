@@ -1,0 +1,30 @@
+package aulas;
+
+public class PrimeiroExercicio {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		int numero1 = 24;
+		double numero2 = 15.25;
+		
+		System.out.println(numero1 + "\n" + numero2);
+		
+		String MeuNome = "Bruno sales";
+		char sexo = 'M';
+		System.out.println(MeuNome + "\n" + sexo);
+		
+		
+		boolean verdadeiro = true;
+		boolean falso = false;
+		
+		System.out.println(verdadeiro + "\n" + falso);
+		
+		int idade = 22;
+		double dinheiro = 50.00;
+		
+		System.out.println(MeuNome + " tem " + idade + " anos , e tem " + dinheiro + " reais");
+		
+	}
+
+}
