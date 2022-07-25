@@ -11,7 +11,7 @@ public class Operadores {
 		/*double a = 10.0;
 		double b = 5.0;
 		double c = 2.0;
-		/*
+		
 		System.out.println("A soma de a e b e: " + (a + b));
 		System.out.println("A subtração de a - b e: " + (a -b));
 		System.out.println("A multiplicação de a * c é: " + (a * c));
@@ -26,8 +26,11 @@ public class Operadores {
 		
 		double resultado3 = a * c / b + a;
 		System.out.println(resultado3);
+		 */
 		
-		
+		/* exercico 1 = Faça
+um Programa que peça as 4 notas bimestrais e mostre a média.
+
 		double bimestre1 = 0; 
 		double bimestre2 = 0;
 		double bimestre3 = 0;
@@ -45,7 +48,48 @@ public class Operadores {
 		System.out.println("Qual a nota de 4 bimestre: " + bimestre4);
 		bimestre4 = leia.nextDouble();
 		
-		System.out.println("Essa e a media do aluno: " + (bimestre1 + bimestre2 + bimestre3 + bimestre4) /4);
+		media = (bimestre1 + bimestre2 + bimestre3 + bimestre4) /4;
 		
-		leia.close();*/
+		System.out.println("A media do aluno é: " + media);
 		
+		leia.close();
+		*/
+		
+		/*exercicio 3 = Faça
+um Programa que pergunte quanto você ganha por hora e o número de horas
+trabalhadas no mês. Calcule e mostre o total do seu salário no referido mês.
+
+		double salario = 0;
+		int quantidadedeHoras = 0;
+		double valorHora = 0;
+		
+		System.out.print("Entre com o valor da hora trabalhada ");
+		valorHora = leia.nextDouble();
+		
+		System.out.print("Entre com a quantidade de horas trabalhadas ");
+		quantidadedeHoras = leia.nextInt();
+		
+		salario = valorHora * quantidadedeHoras;
+		
+		System.out.println("O valor do salario é " + salario);
+		
+		*/
+		
+		/* exercicio4 = Faça
+		um Programa que peça a temperatura em graus Fahrenheit, transforme e mostre a
+		temperatura em graus Celsius.*/
+		
+		double fahrenheit = 0;
+		double celsius = 0;
+		
+		System.out.print("Entre com a temperatura em fahrenheit: ");
+		fahrenheit = leia.nextDouble();
+		
+		celsius = 5 * ((fahrenheit - 32) / 9);
+
+		System.out.println("O valor convertido para celsius fica : " + celsius);
+		
+		leia.close();
+	}
+
+}
