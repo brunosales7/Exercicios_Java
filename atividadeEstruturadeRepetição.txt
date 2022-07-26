@@ -1,0 +1,109 @@
+package aulas;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Correcao {
+
+	public static void main(String[] args) {
+		Scanner leia = new Scanner(System.in).useLocale(Locale.US);
+		
+		/*
+		double nota = 0.0;
+		
+		do {
+		System.out.println("Entre com uma nota entre 0 e 10: ");
+		nota = leia.nextDouble();
+				
+		if(nota > 10 || nota < 0 ) {
+			System.out.println("Nota invalida!");
+		}
+		
+		}while(nota < 0 || nota > 10.0);	
+			System.out.println("Nota valida!");
+		
+				*/
+		
+/*
+		String  usuario;
+		String senha;
+		
+		System.out.print("Entre com o nome do usuario: ");
+		  usuario = leia.nextLine();
+		  
+		  System.out.print("Entre com a senha: ");
+		  senha = leia.nextLine();
+		  
+		  while(usuario.equals(senha)) {
+		  System.out.println("Usuario invalido! ");
+		  
+		  System.out.print("Entre com o nome do usuario: ");
+		  usuario = leia.nextLine();
+		  
+		  System.out.print("Entre com a senha: ");
+		  senha = leia.nextLine();
+		  }
+		  
+		  System.out.println("Cadastro realizado com sucesso");
+		 
+		*/
+		  
+		  String nome;
+		  int idade = 0;
+		  double salario = 0.0;
+		  char sexo;
+		  char estadoCivil;
+		  
+		  System.out.println("Entre com o nome: ");
+		  nome = leia.nextLine();
+		  
+		  while(nome.length() < 3) {
+			  System.out.println("Nome não pode conter menos que 3 caracteres!");
+			  System.out.print("Entre com o nome: ");
+			  nome = leia.next();
+		  }
+		  
+		  
+		  
+		  System.out.println("Entre com a idade: ");
+		  idade = leia.nextInt();
+		  
+		  System.out.println("Entre com o salario: ");
+		  salario = leia.nextDouble();
+		  
+		  System.out.println("Entre com o sexo: ");
+		  sexo = leia.next().charAt(0);
+		  
+		  while(Character.toUpperCase(sexo) != 'M' && Character.toUpperCase(sexo) != 'F') {
+			  System.out.println("Entre com o sexo valido!");
+		  }
+		 
+		  
+		
+		  System.out.println("Entre com o estado civil: ");
+		  estadoCivil = leia.next().charAt(0);
+		  
+		  
+		  while(Character.toUpperCase(estadoCivil) != 'S'
+				  || Character.toUpperCase(estadoCivil) != 'C'
+				  || Character.toUpperCase(estadoCivil) != 'V'
+				  || Character.toUpperCase(estadoCivil) != 'D') {
+			  
+			  System.out.println("Estado Civil invalido! ");
+			  
+			  System.out.print("Entre com o estado civil: ");
+			  estadoCivil = leia.next().charAt(0);
+		  }
+		  
+		
+		  
+		  
+		  
+		  
+		  
+		  
+		leia.close();
+		
+	}
+
+}
